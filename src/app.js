@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Main from "./components/Main";
 
 // import "normalize.css/normalize.css";
-// import "./styles/styles.scss";
+import "./styles/styles.scss";
 
-ReactDOM.render(<p>Life</p>, document.getElementById("app"));
+ReactDOM.render(<Main />, document.getElementById("app"));
