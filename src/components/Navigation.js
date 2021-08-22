@@ -3,17 +3,16 @@ import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   const [isOpen, setOpen] = useState(false);
+  const [isVisible, setVisible] = useState(false);
 
   const toggleOpen = () => {
     setOpen(!isOpen);
+    setVisible(!isVisible);
   };
   return (
     <div className="hamburger-menu">
-      <input id="menu__toggle" type="checkbox" />
-
       <label
         id="hamburger"
-        htmlFor="menu__toggle"
         // onClick={className !== "open" ? (className = "open") : ""}
         className={isOpen ? "open" : null}
         onClick={toggleOpen}
@@ -32,13 +31,14 @@ const Navigation = () => {
         </svg>
       </label>
 
-      <div className="menu__box">
+      <div className={isVisible ? "menu__box--visible" : "menu__box"}>
         <div className="menu__items">
           <NavLink
             className="menu__item"
             exact
             to="/"
             activeClassName="is-active"
+            onClick={toggleOpen}
           >
             Home
           </NavLink>
@@ -46,6 +46,7 @@ const Navigation = () => {
             className="menu__item"
             to="/create"
             activeClassName="is-active"
+            onClick={toggleOpen}
           >
             About
           </NavLink>
@@ -53,6 +54,7 @@ const Navigation = () => {
             className="menu__item"
             to="/edit"
             activeClassName="is-active"
+            onClick={toggleOpen}
           >
             Projects
           </NavLink>
@@ -60,6 +62,7 @@ const Navigation = () => {
             className="menu__item"
             to="/help"
             activeClassName="is-active"
+            onClick={toggleOpen}
           >
             Contact
           </NavLink>

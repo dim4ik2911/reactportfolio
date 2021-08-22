@@ -11,10 +11,10 @@
   cursor: pointer;
 }
 
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  right: 0;
-}
+// .visible ~ .menu__box {
+//   visibility: visible;
+//   right: 0;
+// }
 
 #hamburger {
   display: flex;
@@ -84,7 +84,30 @@
   background: linear-gradient(45deg, #02001f, #1f1b4e);
 
   transition-duration: 0.25s;
+
+  &--visible {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 80px 0;
+
+    list-style: none;
+
+    background: linear-gradient(45deg, #02001f, #1f1b4e);
+
+    transition-duration: 0.25s;
+    visibility: visible;
+    right: 0;
+  }
 }
+
 .menu__items {
   display: flex;
   flex-direction: column;
@@ -97,8 +120,14 @@
   font-size: $m-size;
   color: $pink;
   text-decoration: none;
+
+  &:hover {
+    color: #dbfff4;
+    transition: 1s;
+  }
 }
 
 .is-active {
-  background-color: red;
+  color: $aqua;
+  transition-duration: 0.5s;
 }
