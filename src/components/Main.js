@@ -1,11 +1,9 @@
 import React from "react";
 
 const Main = () => (
-  <div>
-    <div>
-      <h1>Dmitrijs Paklons</h1>
-      <h3>Front-End Developer</h3>
-    </div>
+  <div className="main-page">
+    <h1 className="main-page__title">Dmitrijs Paklons</h1>
+    <h3 className="main-page__subtitle">Front-End Developer</h3>
   </div>
 );
 
