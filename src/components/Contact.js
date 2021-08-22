@@ -1,6 +1,6 @@
 import React from "react";
 
-const Main = () => (
+const Contact = () => (
   <div>
     <div>
       <h1>Dmitrijs Paklons</h1>
@@ -9,4 +9,4 @@ const Main = () => (
   </div>
 );
 
-export default Main;
+export default Contact;

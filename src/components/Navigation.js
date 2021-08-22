@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   const [isOpen, setOpen] = useState(false);
@@ -12,12 +13,13 @@ const Navigation = () => {
 
       <label
         id="hamburger"
-        for="menu__toggle"
+        htmlFor="menu__toggle"
         // onClick={className !== "open" ? (className = "open") : ""}
         className={isOpen ? "open" : null}
         onClick={toggleOpen}
       >
-        <svg width="100" height="100" viewBox="0 0 100 100">
+        {" "}
+        <svg width="$xl-size" height="$xl-size" viewBox="0 0 100 100">
           <path
             className="line line1"
             d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
@@ -30,37 +32,65 @@ const Navigation = () => {
         </svg>
       </label>
 
-      <ul className="menu__box">
+      <div className="menu__box">
         <div className="menu__items">
-          <li>
-            <a className="menu__item" href="#">
-              Home
-            </a>
-          </li>
-          <li>
-            <a className="menu__item" href="#">
-              About
-            </a>
-          </li>
-          <li>
-            <a className="menu__item" href="#">
-              Tools
-            </a>
-          </li>
-          <li>
-            <a className="menu__item" href="#">
-              Projects
-            </a>
-          </li>
-          <li>
-            <a className="menu__item" href="#">
-              Contact
-            </a>
-          </li>
+          <NavLink
+            className="menu__item"
+            exact
+            to="/"
+            activeClassName="is-active"
+          >
+            Home
+          </NavLink>
+          <NavLink
+            className="menu__item"
+            to="/create"
+            activeClassName="is-active"
+          >
+            About
+          </NavLink>
+          <NavLink
+            className="menu__item"
+            to="/edit"
+            activeClassName="is-active"
+          >
+            Projects
+          </NavLink>
+          <NavLink
+            className="menu__item"
+            to="/help"
+            activeClassName="is-active"
+          >
+            Contact
+          </NavLink>
         </div>
-      </ul>
+      </div>
     </div>
   );
 };
 
 export default Navigation;
+// <ul className="menu__box">
+// <div className="menu__items">
+//   <li>
+//     <a className="menu__item" href="#">
+//       Home
+//     </a>
+//   </li>
+//   <li>
+//     <a className="menu__item" href="#">
+//       About
+//     </a>
+//   </li>
+//   <li>
+//     <a className="menu__item" href="#">
+//       Projects
+//     </a>
+//   </li>
+//   <li>
+//     <a className="menu__item" href="#">
+//       Contact
+//     </a>
+//   </li>
+// </div>
+// </ul>
