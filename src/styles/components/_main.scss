@@ -1,0 +1,20 @@
+.main-page {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 1rem;
+
+  .main-page__title {
+    font-size: $xl-size;
+    margin: 0 0 0.5rem 0;
+    color: $aqua;
+  }
+
+  .main-page__subtitle {
+    font-size: $m-size;
+    margin: 0;
+  }
+}
