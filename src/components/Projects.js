@@ -21,23 +21,29 @@ const Projects = () => {
           <div className="project" key={projectsData.indexOf(project)}>
             <h3 className="project__header">{project.name}</h3>
             <div className="project__structure">
-              <img
-                className="project__image"
-                src={project.img}
-                alt="project image"
-              />
+              <a href={project.websiteHref} target="_blank">
+                <img
+                  className="project__image"
+                  src={project.img}
+                  alt="project image"
+                />
+              </a>
               <div>
                 <div className="project__icons">
-                  <img
-                    className="project__icons--piece"
-                    src={rocket}
-                    alt="rocket image"
-                  />
-                  <img
-                    className="project__icons--piece"
-                    src={githubgrey}
-                    alt="github image"
-                  />
+                  <a href={project.websiteHref} target="_blank">
+                    <img
+                      className="project__icons--piece"
+                      src={rocket}
+                      alt="rocket image"
+                    />
+                  </a>
+                  <a href={project.githubHref} target="_blank">
+                    <img
+                      className="project__icons--piece"
+                      src={githubgrey}
+                      alt="github image"
+                    />
+                  </a>
                 </div>
                 <p className="project__text">{project.description}</p>
               </div>

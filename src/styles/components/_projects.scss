@@ -50,6 +50,11 @@
     border-radius: 20px;
     margin: 0 auto 1rem;
     border: 0.1rem solid $pink;
+    transition: border 0.5s;
+
+    &:hover {
+      border: 0.1rem solid $aqua;
+    }
   }
   &__icons {
     display: flex;
@@ -59,10 +64,24 @@
     &--piece {
       height: 4rem;
       width: 4rem;
+      animation: beats 1.5s linear infinite;
     }
   }
   &__text {
     font-size: 1.3rem;
     text-align: center;
+  }
+}
+
+//animations
+@keyframes beats {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
