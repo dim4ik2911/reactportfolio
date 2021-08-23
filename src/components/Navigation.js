@@ -44,7 +44,7 @@ const Navigation = () => {
           </NavLink>
           <NavLink
             className="menu__item"
-            to="/create"
+            to="/about"
             activeClassName="is-active"
             onClick={toggleOpen}
           >
@@ -52,7 +52,7 @@ const Navigation = () => {
           </NavLink>
           <NavLink
             className="menu__item"
-            to="/edit"
+            to="/projects"
             activeClassName="is-active"
             onClick={toggleOpen}
           >
@@ -60,7 +60,7 @@ const Navigation = () => {
           </NavLink>
           <NavLink
             className="menu__item"
-            to="/help"
+            to="/contact"
             activeClassName="is-active"
             onClick={toggleOpen}
           >

@@ -12,9 +12,9 @@ const AppRouter = () => (
     <Navigation />
     <Switch>
       <Route exact path="/" component={Main} />
-      <Route path="/create" component={About} />
-      <Route path="/edit" component={Projects} />
-      <Route path="/help" component={Contact} />
+      <Route path="/about" component={About} />
+      <Route path="/projects" component={Projects} />
+      <Route path="/contact" component={Contact} />
     </Switch>
   </BrowserRouter>
 );

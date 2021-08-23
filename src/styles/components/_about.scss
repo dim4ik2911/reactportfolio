@@ -1,0 +1,34 @@
+.main {
+  margin: 8rem auto 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  height: 11rem;
+  width: 11rem;
+  border: 0.3rem solid $aqua;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+
+  &-image {
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%;
+  }
+}
+
+.text {
+  text-align: center;
+  font-size: $s-size;
+  width: 90%;
+}
+
+.link {
+  color: $aqua;
+  text-decoration: none;
+}

@@ -1,0 +1,23 @@
+.ReactModalPortal > div {
+  opacity: 0;
+  z-index: 20;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 200ms ease-in-out;
+}
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content {
+  width: 70%;
+  height: 30rem;
+  margin: 10rem auto 0 auto;
+}
