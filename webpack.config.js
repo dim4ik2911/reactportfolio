@@ -15,6 +15,14 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
+        loader: "url-loader",
+        test: /\.(png|jpg|gif)$/i,
+      },
+      {
+        loader: "file-loader",
+        test: /\.(pdf|svg)$/,
+      },
+      {
         test: /\.s?css$/i,
         //when one loader use loader when more then use "use"
         use: ["style-loader", "css-loader", "sass-loader"],
