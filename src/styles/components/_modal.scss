@@ -17,7 +17,37 @@
 }
 
 .ReactModal__Content {
-  width: 70%;
-  height: 30rem;
-  margin: 10rem auto 0 auto;
+  width: 20rem;
+  height: 29rem;
+  margin: 10rem auto 0;
+  border-radius: 20px !important;
+  border: 0.2rem solid $aqua !important;
+}
+
+.modal-tools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  &-image {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  &-button {
+    width: 100%;
+    margin: 1.5rem auto 0;
+    display: flex;
+    justify-content: center;
+
+    &-form {
+      outline: none;
+      border: 0.2rem solid $aqua;
+      border-radius: 20px;
+      padding: 0.5rem 1rem;
+      color: $aqua;
+      font-size: 1.4rem;
+      background-color: $hover-color;
+      font-family: "Secular One", sans-serif;
+    }
+  }
 }
