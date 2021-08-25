@@ -32,3 +32,32 @@
   color: $aqua;
   text-decoration: none;
 }
+
+@media (min-width: $extra-large-device) {
+  .main {
+    flex-direction: row;
+    width: 90vw;
+    margin: auto;
+  }
+
+  .photo {
+    height: 15rem;
+    width: 15rem;
+    margin-right: 6rem;
+
+    &-image {
+      height: 15rem;
+      width: 15rem;
+    }
+  }
+
+  .text {
+    font-size: 2rem;
+    width: 40%;
+  }
+
+  .link {
+    color: $aqua;
+    text-decoration: none;
+  }
+}
