@@ -21,7 +21,11 @@ const Projects = () => {
           <div className="project" key={projectsData.indexOf(project)}>
             <h3 className="project__header">{project.name}</h3>
             <div className="project__structure">
-              <a href={project.websiteHref} target="_blank">
+              <a
+                className="project__link"
+                href={project.websiteHref}
+                target="_blank"
+              >
                 <img
                   className="project__image"
                   src={project.img}
@@ -29,7 +33,7 @@ const Projects = () => {
                 />
               </a>
 
-              <div>
+              <div className="project__structure-bottom">
                 <div className="project__icons">
                   <a href={project.websiteHref} target="_blank">
                     <img

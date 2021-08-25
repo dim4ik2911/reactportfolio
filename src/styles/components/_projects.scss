@@ -21,7 +21,7 @@
 }
 
 .slick-dots {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 .slick-dots li button:before {
   font-family: "slick";
@@ -43,15 +43,27 @@
     font-size: 2.8rem;
     color: $aqua;
     text-align: center;
-    margin: 2rem auto 1.5rem;
+    margin: 4rem auto 1.5rem;
   }
 
   &__structure {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    min-height: 75vh;
 
-    height: 75vh;
+    &-bottom {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__link {
+    width: 23rem;
+    margin: 0 auto 1rem;
   }
   &__image {
     width: 23rem;
@@ -78,6 +90,7 @@
   &__text {
     font-size: 1.4rem;
     text-align: center;
+    height: 20%;
   }
 }
 
@@ -93,3 +106,41 @@
     transform: scale(1);
   }
 }
+// @media (min-width: 470px) {
+//   .project {
+//     &__header {
+//       font-size: 3.2rem;
+//     }
+
+//     &__link {
+//       width: 27rem;
+//       margin: 0 auto 1rem;
+//     }
+//     &__image {
+//       width: 27rem;
+//       border-radius: 20px;
+//       margin: 0 auto 1rem;
+//       border: 0.1rem solid $pink;
+//       transition: border 0.5s;
+
+//       &:hover {
+//         border: 0.1rem solid $aqua;
+//       }
+//     }
+//     &__icons {
+//       display: flex;
+//       justify-content: center;
+//       align-self: center;
+
+//       &--piece {
+//         height: 5rem;
+//         width: 5rem;
+//         animation: beats 1.5s linear infinite;
+//       }
+//     }
+//     &__text {
+//       font-size: 1.4rem;
+//       text-align: center;
+//     }
+//   }
+// }
