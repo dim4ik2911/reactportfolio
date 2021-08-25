@@ -12,6 +12,14 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(23, 19, 65, 1) 0%,
+    rgb(26, 21, 88) 44%,
+    rgba(11, 7, 51, 1) 100%
+  );
+  background-size: 300% 300%;
+  animation: background 8s ease infinite;
 }
 
 //this class is used for all pages
@@ -27,6 +35,18 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
