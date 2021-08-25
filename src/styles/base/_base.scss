@@ -14,6 +14,22 @@ body {
   padding: 0;
 }
 
+//this class is used for all pages
+.fade-in-main {
+  animation: fadeIn 3s;
+}
+.fade-in {
+  animation: fadeIn 1.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (min-width: $small-device) {
   html {
     font-size: 75%;
