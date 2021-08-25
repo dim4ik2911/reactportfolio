@@ -15,7 +15,7 @@ const Projects = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className="container">
+    <div className="container fade-in">
       <Slider {...settings} className="container-slider">
         {projectsData.map((project) => (
           <div className="project" key={projectsData.indexOf(project)}>

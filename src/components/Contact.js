@@ -6,7 +6,7 @@ import mail from "../images/mail.png";
 import cvpdf from "../images/DMITRJJS_PAKLONS.pdf";
 
 const Contact = () => (
-  <div className="full-contact-page">
+  <div className="full-contact-page fade-in">
     <div className="contact-page">
       <a className="contact-page__image--link " target="_blank" href={cvpdf}>
         <img className="contact-page__image--image" src={cv} alt="cv image" />

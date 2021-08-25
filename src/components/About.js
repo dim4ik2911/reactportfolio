@@ -11,7 +11,7 @@ const About = () => {
   };
 
   return (
-    <div className="main">
+    <div className="main fade-in">
       <div className="photo">
         <img className="photo-image" src={photo} alt="dimi photo" />
       </div>
