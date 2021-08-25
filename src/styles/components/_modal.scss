@@ -18,10 +18,11 @@
 
 .ReactModal__Content {
   width: 23rem;
-  height: 38rem;
+  height: 34rem;
   margin-top: 6rem;
   border-radius: 20px !important;
   border: 0.2rem solid $aqua !important;
+  inset: auto !important;
 }
 
 .modal-tools {
@@ -29,13 +30,13 @@
   grid-template-columns: repeat(3, 1fr);
 
   &-image {
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
   }
 
   &-button {
     width: 100%;
-    margin: 1.5rem auto 0;
+    margin: 3rem auto 0;
     display: flex;
     justify-content: center;
 

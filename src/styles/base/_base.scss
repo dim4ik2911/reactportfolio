@@ -14,8 +14,23 @@ body {
   padding: 0;
 }
 
-// @media (min-width: $desktop-breakpoint) {
-//   .big-button {
-//     margin-bottom: $xl-size;
-//   }
-// }
+@media (min-width: $small-device) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (min-width: $medium-device) {
+  html {
+    font-size: 87.5%;
+  }
+}
+@media (min-width: $large-device) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (min-width: $extra-large-device) {
+  html {
+    font-size: 106.25%;
+  }
+}
