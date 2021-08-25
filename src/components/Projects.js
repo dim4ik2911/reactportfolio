@@ -28,6 +28,7 @@ const Projects = () => {
                   alt="project image"
                 />
               </a>
+
               <div>
                 <div className="project__icons">
                   <a href={project.websiteHref} target="_blank">
