@@ -36,7 +36,7 @@
   align-items: center;
 
   &__header {
-    font-size: $m-size;
+    font-size: 2.8rem;
     color: $aqua;
     text-align: center;
     margin: 0rem auto 1.5rem;
@@ -47,7 +47,7 @@
     flex-direction: column;
   }
   &__image {
-    width: 21rem;
+    width: 23rem;
     border-radius: 20px;
     margin: 0 auto 1rem;
     border: 0.1rem solid $pink;
@@ -63,13 +63,13 @@
     align-self: center;
 
     &--piece {
-      height: 4rem;
-      width: 4rem;
+      height: 5rem;
+      width: 5rem;
       animation: beats 1.5s linear infinite;
     }
   }
   &__text {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-align: center;
   }
 }

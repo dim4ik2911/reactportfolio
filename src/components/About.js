@@ -8,7 +8,6 @@ const About = () => {
 
   const handleOpenedModal = () => {
     setOpenedModal(!openedModal);
-    console.log(openedModal);
   };
 
   return (

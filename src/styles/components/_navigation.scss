@@ -5,14 +5,14 @@
   position: fixed;
   top: 0.5rem;
   right: 0.5rem;
-  width: $xl-size;
-  height: $xl-size;
+  width: 5rem;
+  height: 5rem;
 
   cursor: pointer;
 }
 
 // .visible ~ .menu__box {
-//   visibility: visible;
+//   visibility: vsisible;
 //   right: 0;
 // }
 
@@ -22,8 +22,8 @@
   position: fixed;
   top: 0.5rem;
   right: 0.5rem;
-  height: $xl-size;
-  width: $xl-size;
+  height: 5rem;
+  width: 5rem;
   cursor: pointer;
   z-index: 200;
 
@@ -83,6 +83,7 @@
   background: linear-gradient(45deg, #02001f, #1f1b4e);
 
   transition-duration: 0.25s;
+  z-index: 100;
 
   &--visible {
     display: block;
@@ -116,7 +117,7 @@
   height: 100%;
 }
 .menu__item {
-  font-size: $m-size;
+  font-size: 3.1rem;
   color: $pink;
   text-decoration: none;
 

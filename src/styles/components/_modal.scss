@@ -17,9 +17,9 @@
 }
 
 .ReactModal__Content {
-  width: 20rem;
-  height: 29rem;
-  margin: 10rem auto 0;
+  width: 23rem;
+  height: 38rem;
+  margin-top: 6rem;
   border-radius: 20px !important;
   border: 0.2rem solid $aqua !important;
 }
@@ -29,8 +29,8 @@
   grid-template-columns: repeat(3, 1fr);
 
   &-image {
-    width: 6rem;
-    height: 6rem;
+    width: 8rem;
+    height: 8rem;
   }
 
   &-button {
@@ -45,7 +45,7 @@
       border-radius: 20px;
       padding: 0.5rem 1rem;
       color: $aqua;
-      font-size: 1.4rem;
+      font-size: 2rem;
       background-color: $hover-color;
       font-family: "Secular One", sans-serif;
     }

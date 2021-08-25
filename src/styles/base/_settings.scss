@@ -4,9 +4,8 @@ $aqua: #2cffc0;
 $pink: #ff2c75;
 $hover-color: #dbfff4;
 
-//Spacing
-$s-size: 1.8rem;
-$m-size: 2.8rem;
-$l-size: 3.6rem;
-$xl-size: 4.4rem;
-// $desktop-breakpoint: 45rem;
+//Breakpoints
+$small-device: 576px;
+$medium-device: 768px;
+$large-device: 992px;
+$extra-large-device: 1200px;
