@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     min-height: 75vh;
 
     &-bottom {
@@ -68,7 +68,7 @@
   &__image {
     width: 23rem;
     border-radius: 20px;
-    margin: 0 auto 1rem;
+
     border: 0.1rem solid $pink;
     transition: border 0.5s;
 
@@ -90,7 +90,6 @@
   &__text {
     font-size: 1.4rem;
     text-align: center;
-    height: 20%;
   }
 }
 
@@ -106,41 +105,68 @@
     transform: scale(1);
   }
 }
-// @media (min-width: 470px) {
-//   .project {
-//     &__header {
-//       font-size: 3.2rem;
-//     }
+@media (min-width: 470px) {
+  .project {
+    &__header {
+      font-size: 3.5rem;
 
-//     &__link {
-//       width: 27rem;
-//       margin: 0 auto 1rem;
-//     }
-//     &__image {
-//       width: 27rem;
-//       border-radius: 20px;
-//       margin: 0 auto 1rem;
-//       border: 0.1rem solid $pink;
-//       transition: border 0.5s;
+      margin: 4rem auto 1.5rem;
+    }
 
-//       &:hover {
-//         border: 0.1rem solid $aqua;
-//       }
-//     }
-//     &__icons {
-//       display: flex;
-//       justify-content: center;
-//       align-self: center;
+    &__link {
+      width: 30rem;
+    }
+    &__image {
+      width: 30rem;
+    }
 
-//       &--piece {
-//         height: 5rem;
-//         width: 5rem;
-//         animation: beats 1.5s linear infinite;
-//       }
-//     }
-//     &__text {
-//       font-size: 1.4rem;
-//       text-align: center;
-//     }
-//   }
-// }
+    &__text {
+      font-size: 1.7rem;
+    }
+  }
+}
+@media (min-width: 620px) {
+  .project {
+    &__header {
+      font-size: 4rem;
+    }
+
+    &__link {
+      width: 35rem;
+    }
+    &__image {
+      width: 35rem;
+    }
+
+    &__text {
+      font-size: 2.2rem;
+    }
+  }
+}
+@media (min-width: $extra-large-device) {
+  .project {
+    &__structure {
+      &-bottom {
+        flex-grow: 0;
+        width: 40%;
+        margin: auto;
+        margin-bottom: 1.5rem;
+      }
+    }
+    &__link {
+      width: 25rem;
+    }
+    &__image {
+      width: 25rem;
+    }
+    &__icons {
+      &--piece {
+        height: 4.5rem;
+        width: 4.5rem;
+      }
+    }
+    &__text {
+      font-size: 1.2rem;
+    }
+  }
+}
