@@ -12,14 +12,19 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(23, 19, 65, 1) 0%,
-    rgb(26, 21, 88) 44%,
-    rgba(11, 7, 51, 1) 100%
+  // background: linear-gradient(
+  //   45deg,
+  //   rgba(23, 19, 65, 1) 0%,
+  //   rgb(26, 21, 88) 44%,
+  //   rgba(11, 7, 51, 1) 100%
+  // );
+  background: repeating-radial-gradient(
+    ellipse farthest-corner at top right,
+    #171341 10%,
+    #0e0d4d 20%
   );
   background-size: 300% 300%;
-  animation: background 8s ease infinite;
+  animation: background 12s ease infinite;
 }
 
 //this class is used for all pages
