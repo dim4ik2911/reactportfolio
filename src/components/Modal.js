@@ -12,6 +12,7 @@ import sass from "../images/modal-images/sass.svg";
 import vsc from "../images/modal-images/vsc.svg";
 import webpack from "../images/modal-images/webpack.svg";
 import babel from "../images/modal-images/babel.svg";
+import heroku from "../images/modal-images/heroku.svg";
 
 const OptionModal = (props) => (
   <div>
@@ -44,6 +45,7 @@ const OptionModal = (props) => (
         />
         <img className="modal-tools-image" src={babel} alt="babel_image" />
         <img className="modal-tools-image" src={webpack} alt="webpack_image" />
+        <img className="modal-tools-image" src={heroku} alt="heroku_image" />
       </div>
       <div className="modal-tools-button">
         <button
