@@ -3,7 +3,7 @@ import cv from "../images/cv.png";
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
 import mail from "../images/mail.png";
-import cvpdf from "../images/DMITRJJS_PAKLONS.pdf";
+import cvpdf from "../images/DMITRIJS_PAKLONS.pdf";
 
 const Contact = () => (
   <div className="full-contact-page fade-in">
