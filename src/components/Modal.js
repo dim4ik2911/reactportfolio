@@ -30,6 +30,7 @@ const OptionModal = (props) => (
         <img className="modal-tools-image" src={vsc} alt="vsc_image" />
         <img className="modal-tools-image" src={react} alt="react_image" />
         <img className="modal-tools-image" src={npm} alt="npm_image" />
+        <img className="modal-tools-image" src={heroku} alt="heroku_image" />
         <img className="modal-tools-image" src={git} alt="git_image" />
         <img className="modal-tools-image" src={github} alt="github_image" />
         <img
@@ -45,7 +46,6 @@ const OptionModal = (props) => (
         />
         <img className="modal-tools-image" src={babel} alt="babel_image" />
         <img className="modal-tools-image" src={webpack} alt="webpack_image" />
-        <img className="modal-tools-image" src={heroku} alt="heroku_image" />
       </div>
       <div className="modal-tools-button">
         <button
