@@ -10,7 +10,7 @@ const projectsData = [
   {
     name: "Sci-Mc Training",
     githubHref: "https://github.com/nology-tech/sci-mx",
-    websiteHref: "https://vinyl-records-835b2.web.app",
+    websiteHref: "https://client-project-f60f4.firebaseapp.com/",
     img: scimx_image,
     description: `Sci-Mx Training App is built during 4 weeks as part of our study at _nology.io in a group of 8 people. During the project we were practising Agile methodology and pair programming. Each Friday reviewing our progress and presenting the achieved work to the companies representative.`,
   },
@@ -23,7 +23,7 @@ const projectsData = [
   },
   {
     name: "Meditation App",
-    githubHref: "https://github.com/nology-tech/sci-mx",
+    githubHref: "https://github.com/dim4ik2911/meditationapp",
     websiteHref: "https://dim4ik2911.github.io/meditationapp/",
     img: meditation_image,
     description: `Breathing meditation app that allows a person to follow a circle
